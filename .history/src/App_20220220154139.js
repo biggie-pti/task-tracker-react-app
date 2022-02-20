@@ -14,7 +14,7 @@ function App() {
         },
         {
             id: 2,
-            text: 'Bunky bed fixing at Mndanstane',
+            text: 'Bunky bed fi',
             day: 'March 4th at 3:00pm',
             reminder: true,
         },

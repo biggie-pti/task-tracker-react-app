@@ -8,13 +8,13 @@ function App() {
     [
         {
             id: 1,
-            text: 'Plank Supplier Appointment',
+            text: 'Administrator Appointment',
             day: 'March 4th at 3:00pm',
             reminder: true,
         },
         {
             id: 2,
-            text: 'Bunky bed fixing at Mndanstane',
+            text: 'President Appointment',
             day: 'March 4th at 3:00pm',
             reminder: true,
         },
@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="container">
     <Header />
-    <Tasks tasks={tasks}/>
+    <Tasks tasks/>
     </div>
   );
 }
