@@ -14,14 +14,8 @@ Header.defaultProps={
     title: 'Task Tracker',
 }
 
-Header.propTypes={
-    title: PropTypes.string,
+Header.PropTypes={
+    title: P
 }
-
-//CSS in JS
-// const headingStyle={
-//     color:'red',
-//     backgroundColor:'black',
-// }
 
 export default Header

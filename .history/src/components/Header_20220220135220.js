@@ -18,10 +18,8 @@ Header.propTypes={
     title: PropTypes.string,
 }
 
-//CSS in JS
-// const headingStyle={
-//     color:'red',
-//     backgroundColor:'black',
-// }
+const headingStyle={
+    color
+}
 
 export default Header
