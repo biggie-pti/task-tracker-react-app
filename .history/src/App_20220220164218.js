@@ -33,7 +33,7 @@ const deleteTask=(id)=>{
 }
 
 const toggleReminder=(id)=>{
-  console.log(id)
+  console.
 }
 
   return (

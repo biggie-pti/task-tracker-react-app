@@ -8,19 +8,19 @@ function App() {
     [
         {
             id: 1,
-            text: 'Plank Supplier Appointment East London',
+            text: 'Plank Supplier Appointment',
             day: 'March 4th at 3:00pm',
             reminder: true,
         },
         {
             id: 2,
-            text: 'Bunky bed fixing at Mdanstane East London',
+            text: 'Bunky bed fixing at Mndanstane',
             day: 'March 4th at 3:00pm',
             reminder: true,
         },
         {
             id: 3,
-            text: 'Bed Delivery in Nahoon Valley',
+            text: 'Bed Delivery',
             day: 'March 4th at 3:00pm',
             reminder: true,
         },
@@ -28,26 +28,12 @@ function App() {
 )
 
 //delete task
-const deleteTask=(id)=>{
- setTasks(tasks.filter((task)=>task.id!==id))
-}
-
-const toggleReminder=(id)=>{
-  console.log(id)
-}
+const 
 
   return (
     <div className="container">
     <Header />
-    {tasks.length>0 ? (<Tasks 
-    tasks={tasks} 
-    onDelete={deleteTask}
-    />)
-    :
-    (
-      'No Tasks to show. Trying adding one'
-    )
-}
+    <Tasks tasks={tasks}/>
     </div>
   );
 }

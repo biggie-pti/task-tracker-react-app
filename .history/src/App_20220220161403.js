@@ -20,7 +20,7 @@ function App() {
         },
         {
             id: 3,
-            text: 'Bed Delivery in Nahoon Valley',
+            text: 'Bed Delivery',
             day: 'March 4th at 3:00pm',
             reminder: true,
         },
@@ -29,25 +29,13 @@ function App() {
 
 //delete task
 const deleteTask=(id)=>{
- setTasks(tasks.filter((task)=>task.id!==id))
-}
-
-const toggleReminder=(id)=>{
-  console.log(id)
+  console.log('delete' ,id)
 }
 
   return (
     <div className="container">
     <Header />
-    {tasks.length>0 ? (<Tasks 
-    tasks={tasks} 
-    onDelete={deleteTask}
-    />)
-    :
-    (
-      'No Tasks to show. Trying adding one'
-    )
-}
+    <Tasks tasks={tasks} onDelete={deleteTask}/>
     </div>
   );
 }

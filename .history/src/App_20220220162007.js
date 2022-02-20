@@ -32,10 +32,6 @@ const deleteTask=(id)=>{
  setTasks(tasks.filter((task)=>task.id!==id))
 }
 
-const toggleReminder=(id)=>{
-  console.log(id)
-}
-
   return (
     <div className="container">
     <Header />
@@ -44,9 +40,6 @@ const toggleReminder=(id)=>{
     onDelete={deleteTask}
     />)
     :
-    (
-      'No Tasks to show. Trying adding one'
-    )
 }
     </div>
   );

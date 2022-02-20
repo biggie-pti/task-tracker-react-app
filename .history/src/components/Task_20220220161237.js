@@ -9,7 +9,7 @@ const Task = ({task , onDelete}) => {
              cursor: 'pointer',
          
          }}
-         onClick={()=>onDelete(task.id)}
+         onClick={()=>onDelete}
          /></h3>
         <p>{task.day}</p>
 
