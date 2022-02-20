@@ -3,7 +3,7 @@ const Header = ({title}) => {
   return (
     <header>
         <h1>
-     
+        Task Tracker
         {title}
         </h1>
        
@@ -11,7 +11,7 @@ const Header = ({title}) => {
   )
 }
 Header.defaultProps={
-    title: 'Task Tracker',
+    title: 'Task Tracker'
 }
 
 export default Header
