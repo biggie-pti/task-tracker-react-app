@@ -38,10 +38,13 @@ const addTask =(task)=>{
  setTasks([...tasks, newTask])
 
 }
+
+
 //delete task
 const deleteTask=(id)=>{
  setTasks(tasks.filter((task)=>task.id!==id))
 }
+
 const toggleReminder=(id)=>{
  setTasks(tasks.map((task)=>task.id===id? {...task, reminder:!task.reminder}:task))
 }
@@ -49,8 +52,10 @@ const toggleReminder=(id)=>{
     <div className="container">
     <Header onAdd={()=>setShowAddTask(!showAddTask)}  showAdd={showAddTask} />
     {showAddTask && <AddTask onAdd={addTask}/>}
- 
-  
+    <AddTask 
+    onAdd={addTask}
+    
+    />
     {tasks.length>0 ? (<Tasks 
     tasks={tasks} 
     onDelete={deleteTask}
